@@ -68,4 +68,28 @@ const clg = require("./clg").clg;
 // clg( Number.EPSILON)
 
 // es6
-clg(Number.isInteger(100));
+// clg(Number.isInteger(100));
+
+// function isInteger(x) {
+// 	return (x ^ 0) === x;
+// }
+// function isInteger(x){
+// 	return (typeof x === 'number') && (x % 1 === 0);
+// }
+
+// function isInteger(x) {
+// 	return Math.round(x) === x;
+// }
+
+function isInteger(x) { return parseInt(x, 10) === x; }
+
+clg(
+	isInteger("1000"),
+	isInteger(1000),
+	isInteger(1000000000000000000000),
+	isInteger(100.0),
+	isInteger(100.1),
+	isInteger(false),
+	isInteger(Infinity),
+	isInteger(-Infinity)
+);
