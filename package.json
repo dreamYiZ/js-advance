@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "��#\u0000 \u0000j\u0000s\u0000-\u0000a\u0000d\u0000v\u0000a\u0000n\u0000c\u0000e\u0000\r\u0000 \u0000",
   "scripts": {
-		"dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/dreamYiZ/js-advance/issues"
   },
-  "homepage": "https://github.com/dreamYiZ/js-advance#readme"
+  "homepage": "https://github.com/dreamYiZ/js-advance#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "mocha": "^8.2.1"
+  }
 }
